@@ -1,4 +1,4 @@
-update=2014年05月23日 23時23分39秒
+update=2014年06月01日 03時40分36秒
 last_client=kicad
 [cvpcb]
 version=1

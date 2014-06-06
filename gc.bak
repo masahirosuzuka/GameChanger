@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:gc
 LIBS:gc-cache
 EELAYER 24 0
 EELAYER END
@@ -298,8 +299,6 @@ F 3 "" H 3600 3400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 3050 2900 3050
-Wire Wire Line
 	5900 2700 5900 3550
 $Comp
 L C C2
@@ -313,12 +312,7 @@ F 3 "~" H 3600 3100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 3050 2900 3400
-Wire Wire Line
 	3600 2650 3600 2900
-Wire Wire Line
-	2700 2800 3600 2800
-Connection ~ 3600 2800
 Wire Wire Line
 	3600 2700 5900 2700
 Connection ~ 3600 2700
@@ -1286,7 +1280,6 @@ Wire Wire Line
 Wire Wire Line
 	7500 3550 7700 3550
 Connection ~ 7700 3550
-NoConn ~ 2700 2950
 $Comp
 L CONN_1 P8
 U 1 1 5351657B
@@ -1359,4 +1352,20 @@ Text Notes 1255 6450 0    60   ~ 0
 EARTH
 Text Notes 1515 2650 0    60   ~ 0
 POWER\n
+Wire Wire Line
+	2700 2800 2900 2800
+Wire Wire Line
+	2900 2800 2900 3400
+Wire Wire Line
+	2700 3050 3190 3050
+Wire Wire Line
+	3190 3050 3190 2795
+Wire Wire Line
+	3190 2795 3600 2795
+Connection ~ 3600 2795
+Wire Wire Line
+	2700 2950 2900 2950
+Connection ~ 2900 2950
+Text Notes 3660 4600 0    60   ~ 0
+POWER_BUTTERY?\n
 $EndSCHEMATC

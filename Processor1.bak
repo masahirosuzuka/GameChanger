@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:gc
 LIBS:gc-cache
 EELAYER 24 0
 EELAYER END
@@ -488,7 +489,7 @@ $EndComp
 Wire Wire Line
 	4200 9650 4200 9950
 Wire Wire Line
-	3400 8900 4800 8900
+	3370 8900 4800 8900
 Wire Wire Line
 	4200 9250 4200 8900
 Connection ~ 4200 8900
@@ -828,4 +829,15 @@ Wire Wire Line
 Wire Wire Line
 	4050 1850 4250 1850
 Connection ~ 3400 1850
+$Comp
+L DDR_VREF #PWR?
+U 1 1 5386EB1B
+P 3370 8900
+F 0 "#PWR?" H 3370 9040 20  0001 C CNN
+F 1 "DDR_VREF" H 3370 9010 30  0000 C CNN
+F 2 "" H 3370 8900 60  0000 C CNN
+F 3 "" H 3370 8900 60  0000 C CNN
+	1    3370 8900
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
